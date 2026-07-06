@@ -115,5 +115,336 @@
    "month": "December",
    "revenue": 101247927.70000014
   }
+ ],
+ "geo": [
+  {
+   "state": "California",
+   "lat": 35.4393,
+   "lon": -119.3154,
+   "revenue": 228785436,
+   "orders": 12000
+  },
+  {
+   "state": "Illinois",
+   "lat": 41.679,
+   "lon": -88.1591,
+   "revenue": 111050966,
+   "orders": 5682
+  },
+  {
+   "state": "Florida",
+   "lat": 27.2878,
+   "lon": -81.2293,
+   "revenue": 90204680,
+   "orders": 4601
+  },
+  {
+   "state": "Texas",
+   "lat": 30.8647,
+   "lon": -97.2656,
+   "revenue": 84011903,
+   "orders": 4289
+  },
+  {
+   "state": "New York",
+   "lat": 41.6718,
+   "lon": -75.0168,
+   "revenue": 55534960,
+   "orders": 2829
+  },
+  {
+   "state": "Indiana",
+   "lat": 40.1692,
+   "lon": -86.3117,
+   "revenue": 54601690,
+   "orders": 2830
+  },
+  {
+   "state": "New Jersey",
+   "lat": 40.4246,
+   "lon": -74.3555,
+   "revenue": 46830956,
+   "orders": 2378
+  },
+  {
+   "state": "Connecticut",
+   "lat": 41.4187,
+   "lon": -73.0361,
+   "revenue": 44251229,
+   "orders": 2264
+  },
+  {
+   "state": "Michigan",
+   "lat": 42.5447,
+   "lon": -83.7733,
+   "revenue": 39025316,
+   "orders": 2039
+  },
+  {
+   "state": "Massachusetts",
+   "lat": 42.2963,
+   "lon": -71.2527,
+   "revenue": 35011942,
+   "orders": 1768
+  },
+  {
+   "state": "Washington",
+   "lat": 47.2663,
+   "lon": -121.3388,
+   "revenue": 28915853,
+   "orders": 1536
+  },
+  {
+   "state": "Colorado",
+   "lat": 39.7371,
+   "lon": -105.1279,
+   "revenue": 27683777,
+   "orders": 1410
+  },
+  {
+   "state": "Ohio",
+   "lat": 40.3568,
+   "lon": -83.0921,
+   "revenue": 25214519,
+   "orders": 1288
+  },
+  {
+   "state": "Minnesota",
+   "lat": 44.9625,
+   "lon": -93.223,
+   "revenue": 24520928,
+   "orders": 1319
+  },
+  {
+   "state": "North Carolina",
+   "lat": 35.5448,
+   "lon": -79.3901,
+   "revenue": 24123069,
+   "orders": 1267
+  },
+  {
+   "state": "Arizona",
+   "lat": 33.348,
+   "lon": -112.1013,
+   "revenue": 23388246,
+   "orders": 1254
+  },
+  {
+   "state": "Virginia",
+   "lat": 37.7805,
+   "lon": -77.3354,
+   "revenue": 21385027,
+   "orders": 1118
+  },
+  {
+   "state": "Georgia",
+   "lat": 33.2368,
+   "lon": -83.738,
+   "revenue": 20726912,
+   "orders": 1090
+  },
+  {
+   "state": "Maryland",
+   "lat": 39.1365,
+   "lon": -76.906,
+   "revenue": 19361781,
+   "orders": 1011
+  },
+  {
+   "state": "Pennsylvania",
+   "lat": 40.5336,
+   "lon": -76.3208,
+   "revenue": 19228069,
+   "orders": 1012
+  },
+  {
+   "state": "Utah",
+   "lat": 40.5499,
+   "lon": -111.9567,
+   "revenue": 17914393,
+   "orders": 919
+  },
+  {
+   "state": "Missouri",
+   "lat": 38.7016,
+   "lon": -92.6089,
+   "revenue": 16878359,
+   "orders": 852
+  },
+  {
+   "state": "Oregon",
+   "lat": 44.6996,
+   "lon": -122.7745,
+   "revenue": 16100107,
+   "orders": 851
+  },
+  {
+   "state": "Wisconsin",
+   "lat": 43.3707,
+   "lon": -88.8356,
+   "revenue": 14586503,
+   "orders": 760
+  },
+  {
+   "state": "Tennessee",
+   "lat": 35.8782,
+   "lon": -86.4035,
+   "revenue": 14123365,
+   "orders": 766
+  },
+  {
+   "state": "Iowa",
+   "lat": 41.901,
+   "lon": -92.9845,
+   "revenue": 13664576,
+   "orders": 735
+  },
+  {
+   "state": "Nevada",
+   "lat": 36.9581,
+   "lon": -116.3013,
+   "revenue": 12154899,
+   "orders": 632
+  },
+  {
+   "state": "Oklahoma",
+   "lat": 35.5957,
+   "lon": -97.3144,
+   "revenue": 11673343,
+   "orders": 607
+  },
+  {
+   "state": "Louisiana",
+   "lat": 30.6254,
+   "lon": -91.7812,
+   "revenue": 10996254,
+   "orders": 538
+  },
+  {
+   "state": "Alabama",
+   "lat": 33.021,
+   "lon": -86.6352,
+   "revenue": 10697649,
+   "orders": 593
+  },
+  {
+   "state": "Kansas",
+   "lat": 38.8959,
+   "lon": -95.3782,
+   "revenue": 10222002,
+   "orders": 528
+  },
+  {
+   "state": "Arkansas",
+   "lat": 35.5727,
+   "lon": -92.9981,
+   "revenue": 9754691,
+   "orders": 525
+  },
+  {
+   "state": "South Carolina",
+   "lat": 33.7406,
+   "lon": -80.6731,
+   "revenue": 7338188,
+   "orders": 365
+  },
+  {
+   "state": "Idaho",
+   "lat": 43.4888,
+   "lon": -115.0147,
+   "revenue": 7080091,
+   "orders": 387
+  },
+  {
+   "state": "Nebraska",
+   "lat": 41.0512,
+   "lon": -96.6604,
+   "revenue": 4936299,
+   "orders": 251
+  },
+  {
+   "state": "New Mexico",
+   "lat": 34.4915,
+   "lon": -106.5353,
+   "revenue": 4934610,
+   "orders": 267
+  },
+  {
+   "state": "Kentucky",
+   "lat": 37.7612,
+   "lon": -85.9063,
+   "revenue": 4415434,
+   "orders": 224
+  },
+  {
+   "state": "North Dakota",
+   "lat": 47.1275,
+   "lon": -98.5071,
+   "revenue": 3939982,
+   "orders": 203
+  },
+  {
+   "state": "Rhode Island",
+   "lat": 41.7949,
+   "lon": -71.4137,
+   "revenue": 3562410,
+   "orders": 193
+  },
+  {
+   "state": "Montana",
+   "lat": 46.6302,
+   "lon": -111.0797,
+   "revenue": 3415070,
+   "orders": 180
+  },
+  {
+   "state": "Mississippi",
+   "lat": 32.4724,
+   "lon": -89.7519,
+   "revenue": 3399265,
+   "orders": 186
+  },
+  {
+   "state": "New Hampshire",
+   "lat": 42.8677,
+   "lon": -71.4619,
+   "revenue": 2382366,
+   "orders": 126
+  },
+  {
+   "state": "Wyoming",
+   "lat": 41.9701,
+   "lon": -105.538,
+   "revenue": 1769825,
+   "orders": 104
+  },
+  {
+   "state": "South Dakota",
+   "lat": 43.8068,
+   "lon": -99.9493,
+   "revenue": 1681224,
+   "orders": 101
+  },
+  {
+   "state": "District of Columbia",
+   "lat": 38.9041,
+   "lon": -77.0172,
+   "revenue": 1674859,
+   "orders": 83
+  },
+  {
+   "state": "Maine",
+   "lat": 43.6615,
+   "lon": -70.2553,
+   "revenue": 1567284,
+   "orders": 73
+  },
+  {
+   "state": "Delaware",
+   "lat": 39.746,
+   "lon": -75.5466,
+   "revenue": 1248592,
+   "orders": 70
+  }
  ]
 }
