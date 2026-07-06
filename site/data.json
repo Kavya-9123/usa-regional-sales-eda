@@ -1,0 +1,119 @@
+{
+ "totals": {
+  "revenue": 1235968899.0000184,
+  "profit": 461772559.9200109,
+  "orders": 64104,
+  "products": 30,
+  "regions": 4,
+  "channels": 3
+ },
+ "region": {
+  "West": 372142307.599997,
+  "South": 335135011.6999981,
+  "Midwest": 320322363.60000104,
+  "Northeast": 208369216.0999999
+ },
+ "regionOrders": {
+  "South": 17333,
+  "Midwest": 16588,
+  "West": 19540,
+  "Northeast": 10643
+ },
+ "channel": {
+  "Wholesale": 668197244.4000051,
+  "Distributor": 387139788.5999992,
+  "Export": 180631865.9999995
+ },
+ "topProducts": [
+  {
+   "name": "Product 26",
+   "revenue": 117291821.40000035
+  },
+  {
+   "name": "Product 25",
+   "revenue": 109473966.60000074
+  },
+  {
+   "name": "Product 13",
+   "revenue": 78281379.60000001
+  },
+  {
+   "name": "Product 14",
+   "revenue": 75390396.60000011
+  },
+  {
+   "name": "Product 5",
+   "revenue": 70804380.60000016
+  },
+  {
+   "name": "Product 15",
+   "revenue": 67331623.20000033
+  },
+  {
+   "name": "Product 2",
+   "revenue": 57401097.599999815
+  },
+  {
+   "name": "Product 4",
+   "revenue": 56701537.19999995
+  },
+  {
+   "name": "Product 1",
+   "revenue": 55952289.600000255
+  },
+  {
+   "name": "Product 3",
+   "revenue": 51764816.4
+  }
+ ],
+ "monthly": [
+  {
+   "month": "January",
+   "revenue": 124111403.00000003
+  },
+  {
+   "month": "February",
+   "revenue": 114747751.00000045
+  },
+  {
+   "month": "March",
+   "revenue": 100613652.10000005
+  },
+  {
+   "month": "April",
+   "revenue": 95224754.99999991
+  },
+  {
+   "month": "May",
+   "revenue": 102272116.50000033
+  },
+  {
+   "month": "June",
+   "revenue": 96912692.7000003
+  },
+  {
+   "month": "July",
+   "revenue": 97185201.79999988
+  },
+  {
+   "month": "August",
+   "revenue": 101947025.80000004
+  },
+  {
+   "month": "September",
+   "revenue": 99432301.3999999
+  },
+  {
+   "month": "October",
+   "revenue": 100988872.19999994
+  },
+  {
+   "month": "November",
+   "revenue": 101285199.79999976
+  },
+  {
+   "month": "December",
+   "revenue": 101247927.70000014
+  }
+ ]
+}

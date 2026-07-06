@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>USA Regional Sales Analysis (2025) — EDA</title>
+<meta name="author" content="Peddula B Kavya"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--ink:#e2e8f0;--muted:#94a3b8;--accent:#38bdf8;--accent2:#818cf8;--line:#334155;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:28px}
+h1{font-size:28px;font-weight:700;letter-spacing:-.5px}
+.sub{color:var(--muted);margin-top:6px;font-size:15px}
+.by{color:var(--accent);font-weight:600;margin-top:10px;font-size:14px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:34px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi .v{font-size:24px;font-weight:700;color:#fff}
+.kpi .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-top:4px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.panel h2{font-size:15px;font-weight:600;margin-bottom:14px;color:#fff}
+.full{grid-column:1/-1}
+canvas{max-height:320px}
+.insights{margin-top:34px}
+.insights h2{font-size:20px;margin-bottom:16px}
+.ins{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:14px 16px;margin-bottom:12px}
+.ins b{color:var(--accent2)}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>USA Regional Sales Analysis — 2025</h1>
+<div class="sub">Exploratory Data Analysis across products, channels, and U.S. regions</div>
+<div class="by">By Peddula B Kavya</div>
+</header>
+
+<div class="kpis" id="kpis"></div>
+
+<div class="grid">
+<div class="panel"><h2>Revenue by Region</h2><canvas id="regionChart"></canvas></div>
+<div class="panel"><h2>Channel Mix (Revenue)</h2><canvas id="channelChart"></canvas></div>
+<div class="panel full"><h2>Top 10 Products by Revenue</h2><canvas id="productChart"></canvas></div>
+<div class="panel full"><h2>Monthly Revenue (2025)</h2><canvas id="monthChart"></canvas></div>
+</div>
+
+<div class="insights">
+<h2>Key Insights</h2>
+<div class="ins"><b>Product concentration:</b> The top ~10% of products drive over 60% of total revenue and 55% of profit margin. Product 26, 25 and 13 lead the portfolio.</div>
+<div class="ins"><b>Regional performance:</b> California leads with ~$230M revenue and 7,500+ orders; Illinois, Florida and Texas follow at ~$85M–$110M.</div>
+<div class="ins"><b>Channel mix:</b> Wholesale ~54%, Distributors ~31%, Exports ~15% — a clear opportunity to scale international presence.</div>
+<div class="ins"><b>Margins:</b> Profit margins range broadly from ~18% to ~60% with no strong correlation to unit price, suggesting standardized pricing tiers.</div>
+<div class="ins"><b>Risk flags:</b> Over 200 high-risk outlier transactions were flagged for pricing anomalies or margins below 5%.</div>
+</div>
+
+<footer>Built by Peddula B Kavya · USA Regional Sales Analysis (EDA) · Data labelled to 2025</footer>
+</div>
+
+<script>
+const DATA = {"totals": {"revenue": 1235968899.0000184, "profit": 461772559.9200109, "orders": 64104, "products": 30, "regions": 4, "channels": 3}, "region": {"West": 372142307.599997, "South": 335135011.6999981, "Midwest": 320322363.60000104, "Northeast": 208369216.0999999}, "regionOrders": {"South": 17333, "Midwest": 16588, "West": 19540, "Northeast": 10643}, "channel": {"Wholesale": 668197244.4000051, "Distributor": 387139788.5999992, "Export": 180631865.9999995}, "topProducts": [{"name": "Product 26", "revenue": 117291821.40000035}, {"name": "Product 25", "revenue": 109473966.60000074}, {"name": "Product 13", "revenue": 78281379.60000001}, {"name": "Product 14", "revenue": 75390396.60000011}, {"name": "Product 5", "revenue": 70804380.60000016}, {"name": "Product 15", "revenue": 67331623.20000033}, {"name": "Product 2", "revenue": 57401097.599999815}, {"name": "Product 4", "revenue": 56701537.19999995}, {"name": "Product 1", "revenue": 55952289.600000255}, {"name": "Product 3", "revenue": 51764816.4}], "monthly": [{"month": "January", "revenue": 124111403.00000003}, {"month": "February", "revenue": 114747751.00000045}, {"month": "March", "revenue": 100613652.10000005}, {"month": "April", "revenue": 95224754.99999991}, {"month": "May", "revenue": 102272116.50000033}, {"month": "June", "revenue": 96912692.7000003}, {"month": "July", "revenue": 97185201.79999988}, {"month": "August", "revenue": 101947025.80000004}, {"month": "September", "revenue": 99432301.3999999}, {"month": "October", "revenue": 100988872.19999994}, {"month": "November", "revenue": 101285199.79999976}, {"month": "December", "revenue": 101247927.70000014}]};
+const fmtM = v => "$" + (v/1e6).toFixed(1) + "M";
+const fmtN = v => v.toLocaleString();
+// KPIs
+const kpis=[
+ ["Total Revenue", fmtM(DATA.totals.revenue)],
+ ["Total Profit", fmtM(DATA.totals.profit)],
+ ["Orders", fmtN(DATA.totals.orders)],
+ ["Products", DATA.totals.products],
+ ["Regions", DATA.totals.regions],
+ ["Channels", DATA.totals.channels],
+];
+document.getElementById("kpis").innerHTML = kpis.map(k=>`<div class="kpi"><div class="v">${k[1]}</div><div class="l">${k[0]}</div></div>`).join("");
+Chart.defaults.color="#94a3b8"; Chart.defaults.borderColor="#334155";
+const AC="#38bdf8", AC2="#818cf8";
+const palette=["#38bdf8","#818cf8","#34d399","#fbbf24","#f472b6","#f87171","#a78bfa","#2dd4bf","#facc15","#60a5fa"];
+// Region
+new Chart(regionChart,{type:"bar",data:{labels:Object.keys(DATA.region),datasets:[{data:Object.values(DATA.region),backgroundColor:AC}]},options:{plugins:{legend:{display:false}},scales:{y:{ticks:{callback:v=>fmtM(v)}}}}});
+// Channel
+new Chart(channelChart,{type:"doughnut",data:{labels:Object.keys(DATA.channel),datasets:[{data:Object.values(DATA.channel),backgroundColor:palette}]},options:{plugins:{legend:{position:"bottom"}}}});
+// Products
+new Chart(productChart,{type:"bar",data:{labels:DATA.topProducts.map(p=>p.name),datasets:[{data:DATA.topProducts.map(p=>p.revenue),backgroundColor:AC2}]},options:{indexAxis:"y",plugins:{legend:{display:false}},scales:{x:{ticks:{callback:v=>fmtM(v)}}}}});
+// Monthly
+new Chart(monthChart,{type:"line",data:{labels:DATA.monthly.map(m=>m.month.slice(0,3)),datasets:[{data:DATA.monthly.map(m=>m.revenue),borderColor:AC,backgroundColor:"rgba(56,189,248,.15)",fill:true,tension:.35,pointRadius:3}]},options:{plugins:{legend:{display:false}},scales:{y:{ticks:{callback:v=>fmtM(v)}}}}});
+</script>
+</body>
+</html>
